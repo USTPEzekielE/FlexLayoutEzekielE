@@ -2,10 +2,6 @@ body *{
     display: flex;
 }
 
-#wrapper {
-    flex-wrap: wrap;
-}
-
 .borderstyle {
     border: 2px solid #000;
     flex-grow: 1;
@@ -82,4 +78,11 @@ footer {
     height: 50px;
     margin: 5px;
     padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    body * {
+        display: flex;
+        flex-direction: column;
+    }
 }
